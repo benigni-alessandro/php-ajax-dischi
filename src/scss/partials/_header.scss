@@ -1,0 +1,30 @@
+.container{
+  max-width: 100%;
+  &.filtri{
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: $color-green;
+    margin-left: 0px;
+    margin-right: 0px;
+    @include flex-r-c-c;
+    position: fixed;
+    z-index: 2;
+    .row{
+      .col-12{
+        @include flex-r-c-c;
+        select.form-select{
+          width: 200px;
+          height: 30px;
+          padding: 3px;
+        }
+        button{
+          width: 200px;
+          height: 30px;
+          padding-bottom: 5px;
+          margin-left: 50px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
